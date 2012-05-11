@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WebSocket client</title>
+</head>
+<body>
+
+<script src="http://localhost:8080/socket.io/socket.io.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+  var socket = io.connect('ws://localhost:8080');
+  socket.on('position', function (data) {
+    $('#udata').append("<p> Latitude: " + data.lat + " Longitude: " + data.lon + " </p>\n");
+  });
+</script>
+<div id="udata">
+</div>
+</body>
+</html>

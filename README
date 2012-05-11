@@ -1,0 +1,41 @@
+Code as part of my Building A Firehose talk. 
+
+augmentor.php
+searchsb.php
+langdetect.php
+
+Some augmentors that connect to ZeroMQ localhost 5577 and push into redis queues
+
+indexsb.php
+3098.csv
+
+Indexer for mongo and the db of starbucks locations from http://geocommons.com/overlays/3098
+
+kafkaconsumer.php
+kafkastore.php
+
+Push stream from ZeroMQ into kafka in store
+Pull it in a batch from Kakfa in consume
+
+location.php
+ingress.php
+
+Grab location data from a mobile device, and push it into ZeroMQ via an HTTP post to ingress
+
+serialize.php
+
+Demonstrate json and msgpack serialization
+
+twitter.php
+elasticsearch.php
+
+Connect to the twitter stream for search 'xdebug', and provide filtering via zeromq and elastic search
+
+egress.js
+
+Node.js piping zeromq to websockets
+
+debug.php
+
+Helper script with some injection points for various bits
+
