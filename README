@@ -18,9 +18,9 @@ Push stream from ZeroMQ into kafka in store
 Pull it in a batch from Kakfa in consume
 
 location.php
-ingress.php
+input.php
 
-Grab location data from a mobile device, and push it into ZeroMQ via an HTTP post to ingress
+Grab location data from a mobile device, and push it into ZeroMQ via an HTTP post to input
 
 serialize.php
 
@@ -31,7 +31,7 @@ elasticsearch.php
 
 Connect to the twitter stream for search 'xdebug', and provide filtering via zeromq and elastic search
 
-egress.js
+output.js
 
 Node.js piping zeromq to websockets
 

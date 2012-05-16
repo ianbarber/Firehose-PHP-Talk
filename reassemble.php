@@ -6,7 +6,6 @@ $sock = $ctx->getSocket(ZMQ::SOCKET_SUB);
 $sock->setSockOpt(ZMQ::SOCKOPT_SUBSCRIBE, "");
 $sock->connect("tcp://localhost:5577");
 
-$ctx = new ZMQContext();
 $out = $ctx->getSocket(ZMQ::SOCKET_PUSH);
 $out->connect("tcp://localhost:5599");
 

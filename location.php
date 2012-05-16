@@ -14,7 +14,7 @@ setcookie("uid", $guid, time() + (60*60*24*365));
             function(pos) { 
                 $.ajax({
                     type: 'POST',
-                    url: 'http://general.local/fh/ingress.php',
+                    url: 'http://general.local/fh/input.php',
                     data: {lat: pos.coords.latitude, lon: pos.coords.longitude} 
                 });
             });

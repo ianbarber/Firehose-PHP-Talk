@@ -1,5 +1,5 @@
 <?php
-/* Dump from ingress */
+/* Dump from input */
 // $ctx = new ZMQContext(); 
 // $sock = $ctx->getSocket(ZMQ::SOCKET_PULL);
 // $sock->bind("tcp://127.0.0.1:5566");
