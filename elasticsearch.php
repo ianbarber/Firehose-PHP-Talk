@@ -21,6 +21,7 @@ function register_query($host, $path, $name, $query) {
 function percolate($host, $path, $tweet) {
     $tweet = array('doc' => array('tweet' => $tweet['text']));
     $matches = escall($host, $path, array('content' => json_encode($tweet)));
+
     return $matches['matches'];
 }
 
